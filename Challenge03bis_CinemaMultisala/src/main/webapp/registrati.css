@@ -1,0 +1,28 @@
+#acca2{
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 500px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 100px auto;
+}
+
+#acca2 h2{
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+
+.reg{
+    margin-top: 30px;
+}
+
+.reg label{
+    width: 150px;
+    margin: 10px 0;
+}
+
+#lab{
+    width: 250px;
+}
+

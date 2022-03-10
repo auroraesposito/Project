@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+}
+
+.sopra{
+    background-color: rgb(255, 153, 0);
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+}
+
+.menu{
+    background-color: rgb(66, 66, 66);
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    line-height: 50px;
+}
+
+.menu ul li{
+    display: inline;
+    margin: auto 30px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(255, 153, 0);
+}
+
+.menu ul li a:hover{
+    color: red;
+}
+
+#sale{
+    margin-top: 100px;
+}
+
+.row{
+    margin: 0;
+}
+
+.col-md-3{
+    background-color: rgba(172, 172, 172, 0.671);
+    padding-top: 40px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.col-md-3 h2{
+    color: rgb(255, 153, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.col-md-3 hr{
+    margin: 0 50px;
+    height: 2px;
+    color: rgb(255, 153, 0);
+    opacity: 1;
+}
+
+.col-md-3 ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.col-md-3 ul li{
+    margin-top: 15px;
+    font-size: 25px;
+}

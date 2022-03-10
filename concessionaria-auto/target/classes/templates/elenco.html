@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style type="text/css>
+
+img{width:140; height: 100pz};
+
+</style>
+</head>
+<body>
+
+<h1 th:text="${titolo}"> Elenco auto usate</h1>
+
+<table>
+	<tr th:each="auto : ${automobili}" >
+		<td th:text="${auto.marca}"></td>	
+		<td><img th:src="${auto.modello}"></td>	
+	
+	</tr>
+	
+</table>
+
+</body>
+</html>

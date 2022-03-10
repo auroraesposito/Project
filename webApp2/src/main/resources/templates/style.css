@@ -1,0 +1,53 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: auto;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	background-color: rgb(236, 236, 236);
+}
+
+.rett {
+	margin-top: 230px;
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 20px;
+	height: 400px;
+	width: 400px;
+	text-align: center;
+	padding: 70px 50px;
+	box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.63);
+}
+
+#tit {
+	font-size: 30px;
+	font-weight: 300;
+	color: rgb(0, 0, 0);
+}
+
+form {
+	margin-top: 80px;
+}
+
+label {
+	font-size: 20px;
+	color: rgb(61, 61, 61);
+}
+
+input {
+	margin: 20px;
+	width: 250px;
+	height: 28px;
+	border: 1px solid rgb(61, 61, 61);
+	border-radius: 5px;
+}
+
+#acc {
+	width: 130px;
+	height: 38px;
+	background-color: rgb(158, 158, 158);
+	color: rgb(46, 46, 46);
+	font-size: 17px;
+	letter-spacing: 2px;
+	border: 1px hidden red;
+	border-radius: 15px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Area riservata</title>
+ 
+</head>
+<body>
+    
+    <h1 th:text="${titolo}">Elenco domande</h1>
+ 
+    <table>
+        <tr th:each="dom : ${domanda}" >
+            <td th:text="${domanda.punteggio_domanda}">Punteggio</td>
+            <td th:text="${domanda.risposta_esatta}">Risposta esatta</td>
+            <td th:text="${domanda.testo_domanda}">Domanda</td>
+        </tr>
+ 
+ 
+    </table>
+</body>
+</html>

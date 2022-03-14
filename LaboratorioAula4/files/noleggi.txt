@@ -1,0 +1,15 @@
+2022-03-14) 2) paperino
+noleggi: 1 id: 27 
+tipo: BICI 
+Anno: 2011 
+prezzo: 239.35698177262378 
+Costo noleggio 0.2393569817726238
+--------------------------------------
+2022-03-14) 4) giovanni
+noleggi: 1 id: 78 
+tipo: CAMPER 
+Anno: 2002 
+prezzo: 86842.33196006018 
+Costo noleggio 217.10582990015047
+VeicoloTargato [targa=CP78 patente D]
+--------------------------------------

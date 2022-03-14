@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th = "https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1 th:text="${regione}">Regione</h1>
+
+
+
+
+<select name="province" id="province">
+<option th:each = "provincia:${province}" th:text="${provincia.provincia}"></option> 
+
+</select>
+<div id="maschi"></div>
+<div id="femmine"></div>
+<script type="text/javascript">
+
+const tendina = document.getElementById('province');
+const maschi = document.getElementById('maschi');
+const femmine = document.getElementById('femmine');
+tendina.onchange = function(){
+	let comune = tendina.value;
+	console.log(comune);
+	
+	fetch("http://localhost:9085/popolazione/api/infoprovincia/" + comune)
+	.then(p => p.json())
+	.then(p => {
+		maschi.innerHTML = "<div style='height:10px; width:" + (p.maschi/1000) + "px; background-color:red'></div>" ;
+		femmine.innerHTML = "<div style='height:10px; width:" + (p.femmine/1000) + "px; background-color:blue'></div>" ;
+		
+		
+		
+	})
+	
+};
+
+
+</script>
+
+
+</body>
+</html>

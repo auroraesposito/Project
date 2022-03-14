@@ -8,7 +8,7 @@ import com.espo.popolazione.entities.Provincia;
 @Repository
 public interface ProvinciaDAO extends JpaRepository<Provincia, Integer >{
 
-	
+	Provincia findProvinciaByProvincia(String provincia); 
 	
 	
 }

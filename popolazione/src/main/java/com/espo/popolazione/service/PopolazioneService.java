@@ -9,11 +9,14 @@ public interface PopolazioneService {
 
 	List<Eta> getAllEta();
 	Eta getDatiByEta(int id);
+	List<Eta> getEtaByRange(int min, int max);
 	
 	List<Provincia> getProvincia();
 	List<Provincia> getProvinciaByRegione(String regione);
 	
 	Provincia getProvinciaById(int id);
+	Provincia getProvinciaByProvincia(String provincia);
+	
 	
 	
 	

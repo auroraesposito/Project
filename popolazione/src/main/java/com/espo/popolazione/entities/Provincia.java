@@ -1,5 +1,6 @@
 package com.espo.popolazione.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,7 +18,10 @@ public class Provincia {
 	private int id;
 	
 	private String regione;
+	
+	@Column(name= "comune")
 	private String provincia;
+	
 	private int maschi;
 	private int femmine;
 	private int totale;

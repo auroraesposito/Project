@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th = "https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>Scegli regione</h1>
+
+
+
+
+<select name="regione" id="regione" onchange="trovaProvince(this)">
+<option th:each = "regione:${regioni}" th:text="${regione}"></option> 
+
+</select>
+
+<script type="text/javascript">
+
+function trovaProvince(e) {
+	console.log(e.value);
+	location.href = "/popolazione/regione/" + e.value;
+}
+
+</script>
+
+
+</body>
+</html>

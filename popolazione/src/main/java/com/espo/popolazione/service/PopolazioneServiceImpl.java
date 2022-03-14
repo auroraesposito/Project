@@ -1,6 +1,6 @@
 package com.espo.popolazione.service;
 
-import java.util.List;
+import java.util.List;import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,6 +51,20 @@ public class PopolazioneServiceImpl implements PopolazioneService {
 	public Eta getDatiByEta(int id) {
 		// TODO Auto-generated method stub
 		return repoEta.findById(id).get();
+	}
+
+	@Override
+	public List<Eta> getEtaByRange(int min, int max) {
+		List<Eta> listaEta = getAllEta().stream()
+										.filter(e -> (e.getEta() >= min) && (e.getEta() <= max))
+										.collect(Collectors.toList());
+		return listaEta;
+	}
+
+	@Override
+	public Provincia getProvinciaByProvincia(String provincia) {
+
+		return repoPro.findProvinciaByProvincia(provincia);
 	}
 
 }

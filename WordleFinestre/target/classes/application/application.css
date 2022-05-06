@@ -1,0 +1,25 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.button {-fx-background-color:red;}
+/*.box {-fx-grid-lines-visible: true; -fx-hgap: 10} */
+
+.game-grid {
+    -fx-background-color: white ;
+    -fx-padding: 50 ;
+    -fx-text: black;
+}
+
+.game-grid-cell {
+    -fx-background-color: black, white ;
+    -fx-background-insets: 0, 0 1 1 0 ;
+}
+.game-grid-cell.first-row {
+    -fx-background-insets: 0, 1 1 1 0 ;
+}
+.game-grid-cell.first-column {
+    -fx-background-insets: 0, 0 1 1 1 ;
+}
+
+.game-grid-cell.first-row.first-column {
+    -fx-background-insets: 0, 1 ;
+}
